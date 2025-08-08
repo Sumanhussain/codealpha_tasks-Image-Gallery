@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center mb-8 text-gray-800">🎨 Art Gallery</h1>
+        
+        <!-- Filter Controls -->
+        <div class="flex flex-wrap justify-center gap-2 mb-8">
+            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition" data-filter="all">All</button>
+            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition" data-filter="nature">Nature</button>
+            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition" data-filter="architecture">Architecture</button>
+            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition" data-filter="abstract">Abstract</button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Nature Images -->
+            <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="nature">
+                <img src="/image/snowy-mountains-.jpg" alt="Majestic mountain range at sunrise with pink and orange hues reflecting on a crystal-clear alpine lake" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Mountain Sunrise</h3>
+                    <p class="text-sm">Nature - Taken in Switzerland</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="nature">
+                <img src="/image/rainforest.jpeg" alt="Dense tropical rainforest with sunlight filtering through the canopy, showing vibrant green vegetation" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Dense rainforest  </h3>
+                    <p class="text-sm">Nature-Amazon jungle</p>
+                </div>
+            </div>
+
+            <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="nature">
+                <img src="/image/lake.jpeg" alt="Dense tropical rainforest with sunlight filtering through the canopy, showing vibrant green vegetation" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Peaceful lake</h3>
+                    <p class="text-sm">Nature -Taken in Canada </p>
+                </div>
+            </div>
+
+            <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="nature">
+                <img src="/image/Desert.jpeg" alt="Dense tropical rainforest with sunlight filtering through the canopy, showing vibrant green vegetation" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Desert  </h3>
+                    <p class="text-sm">Nature -Sahara</p>
+                </div>
+            </div>
+
+             <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="nature">
+                <img src="/image/cherry-blossoms.jpeg" alt="Dense tropical rainforest with sunlight filtering through the canopy, showing vibrant green vegetation" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Cherry blossom trees  </h3>
+                    <p class="text-sm">Nature -Japan</p>
+                </div>
+            </div>
+            
+           <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="nature">
+                <img src="/image/flower-garden.jpeg" alt="Dense tropical rainforest with sunlight filtering through the canopy, showing vibrant green vegetation" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Flower-Garden  </h3>
+                    <p class="text-sm">Nature -Islamabad Pakistan</p>
+                </div>
+            </div>
+            
+           <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="nature">
+                <img src="/image/rainbow.jpeg" alt="Dense tropical rainforest with sunlight filtering through the canopy, showing vibrant green vegetation" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Rainy - Rainbow </h3>
+                    <p class="text-sm">Nature</p>
+                </div>
+            </div>
+
+
+
+            <!-- Architecture Images -->
+            <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="architecture">
+                <img src="/image/altantic-australasia.jpeg" alt="Modern skyscraper with reflective glass facade in a bustling city center, showing geometric patterns" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Atlanic Australasia</h3>
+                    <p class="text-sm">Architecture - Australai</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="architecture">
+                <img src="/image/architechural.jpg" alt="Historic cathedral with intricate gothic architecture and stained glass windows glowing in sunlight" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Eiffel Tower</h3>
+                    <p class="text-sm">Architecture - Paris</p>
+                </div>
+            </div>
+
+            <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="architecture">
+                <img src="/image/Gothic-splendor.jpeg" alt="Historic cathedral with intricate gothic architecture and stained glass windows glowing in sunlight" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Gothic Splendor</h3>
+                    <p class="text-sm">Architecture - Paris</p>
+                </div>
+            </div>
+
+
+            
+            <!-- Abstract Images -->
+            <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="abstract">
+                <img src="/image/fluid.jpeg" alt="Colorful abstract painting with fluid paint swirls in vibrant pinks, blues, and purples" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Fluid Colors</h3>
+                    <p class="text-sm">Abstract Art</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="abstract">
+                <img src="/image/balance abstract.jpeg" alt="Geometric abstract composition with intersecting lines and shapes in a monochromatic palette" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Structural Balance</h3>
+                    <p class="text-sm">Abstract Art</p>
+                </div>
+            </div>
+
+
+             <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="abstract">
+                <img src="/image/paniting.jpg" alt="Geometric abstract composition with intersecting lines and shapes in a monochromatic palette" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Art House</h3>
+                    <p class="text-sm">Abstract Art</p>
+                </div>
+            </div>
+
+
+             <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="abstract">
+                <img src="/image/blue ocean.jpeg" alt="Geometric abstract composition with intersecting lines and shapes in a monochromatic palette" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Blue Ocean- Acrylic Pouring</h3>
+                    <p class="text-sm">Abstract Art</p>
+                </div>
+            </div>
+
+
+            
+            <!-- Mixed Images -->
+            <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="nature">
+                <img src="/image/waterfull.jpeg" alt="Dramatic waterfall cascading down rocky cliffs surrounded by lush green vegetation" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">Waterfall Majesty</h3>
+                    <p class="text-sm">Nature </p>
+                </div>
+            </div>
+            
+            <div class="gallery-item rounded-lg overflow-hidden shadow-md bg-white" data-category="architecture">
+                <img src="/image/sainte chapelle.JPG" alt="Futuristic bridge with cable-stayed design illuminated with blue LED lights at night" class="w-full h-64 object-cover">
+                <div class="gallery-overlay">
+                    <h3 class="font-bold text-lg">La Sainte Chapelle</h3>
+                    <p class="text-sm">Architecture - Paris</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Controls -->
+        <div class="flex justify-center gap-4 mt-8">
+            <button id="prev-btn" class="px-6 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition">Previous</button>
+            <button id="next-btn" class="px-6 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition">Next</button>
+        </div>
+    </div>
+    
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev">&lt;</button>
+        <div class="lightbox-content">
+            <img class="lightbox-image" src="" alt="">
+            <div class="text-white text-center mt-4 lightbox-caption"></div>
+        </div>
+        <button class="lightbox-nav lightbox-next">&gt;</button>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+  </html>  
+   
+        
